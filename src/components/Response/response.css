@@ -1,0 +1,15 @@
+.container{
+  padding: 10px;
+  width: 100%;
+  max-width: 600px;
+  min-height: 150px;
+  margin: 90px auto;
+  border-radius: 4px;
+  background-color: #474747;
+  text-align: left;
+}
+
+p {
+  color: #dbdbdb;
+  font-size: 17px;
+}

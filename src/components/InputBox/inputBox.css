@@ -1,0 +1,40 @@
+/* Hide the default file input */
+.file-input {
+  display: none;
+}
+
+/* Style the label as a button */
+.file-label {
+  display: inline-block;
+  padding: 20px 30px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  text-align: center;
+  line-height: 1.8;
+}
+
+/* Style the container */
+.file-input-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px;
+  width: 100%;
+  max-width: 400px;
+  margin: 20px auto;
+  border-radius: 4px;
+  background-color: #474747;
+}
+
+.file-input-container:hover {
+  background-color: hsl(0, 0%, 30%);
+}
+
+/* Optional: style when dragging over the container */
+.file-input-container.drag-over {
+  background-color: hsl(0, 0%, 30%);
+
+}
