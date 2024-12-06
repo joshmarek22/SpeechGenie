@@ -1,3 +1,10 @@
-h1{
+body {
+  font-family: sans-serif;
+}
+
+.title{
   color: white;
+  font-size: 70px;
+  font-weight: bolder;
+  
 }

@@ -1,15 +1,16 @@
 .container{
-  padding: 10px;
+  /* padding: 10px; */
   width: 100%;
   max-width: 600px;
   min-height: 150px;
-  margin: 90px auto;
+  margin: 0px auto;
   border-radius: 4px;
-  background-color: #474747;
+  background-color: rgba(46, 46, 46, 70%);
   text-align: left;
+  padding: 1.5% 8%;
 }
 
-p {
+.response {
   color: #dbdbdb;
-  font-size: 17px;
+  font-size: 40px;
 }

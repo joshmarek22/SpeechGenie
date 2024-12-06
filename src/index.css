@@ -1,5 +1,10 @@
 body{
   text-align: center;
-  background-color: hsl(0, 0%, 18%);
+  background-color: #212121;
+  background-image: url('assets/bgImage.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  
   padding: 100px
 }
+

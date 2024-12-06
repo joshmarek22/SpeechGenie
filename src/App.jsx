@@ -3,10 +3,11 @@ import Response from './components/Response/Response'
 import './App.css'
 import React, { useEffect, useState } from 'react'
 import { callApi } from './tools/ApiCall'
+import Typewriter from './components/TypeWriter'
 
 function App() {
   const [fileName, setFileName] = useState()
-  const [response, setResponse] = useState('')
+  const [response, setResponse] = useState(``)
   
   useEffect(() => {
     async function fetchData() {
@@ -22,7 +23,7 @@ function App() {
 
   return (
     <div>
-      <h1>SpeechGenie</h1>
+      <Typewriter text={"SpeechGenie"} delay={150} classProperty={'title'}/>
       <InputBox fileName={fileName} setFileName={setFileName}/>
       <Response response={response} setResponse={setResponse}/>
     </div>
