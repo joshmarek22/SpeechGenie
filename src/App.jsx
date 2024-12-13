@@ -1,5 +1,6 @@
 import InputBox from './components/InputBox/InputBox'
 import Response from './components/Response/Response'
+import Footer from './components/Footer'
 import './App.css'
 import React, { useEffect, useState } from 'react'
 import { callApi } from './tools/ApiCall'
@@ -22,10 +23,13 @@ function App() {
   }, [fileName]); //Runs hook when filename state us updates
 
   return (
-    <div>
-      <Typewriter text={"SpeechGenie"} delay={150} classProperty={'title'}/>
-      <InputBox fileName={fileName} setFileName={setFileName}/>
-      <Response response={response} setResponse={setResponse}/>
+    <div className="appContainer">
+      <div className="content">
+        <Typewriter text={"SpeechGenie"} delay={150} classProperty={'title'}/>
+        <InputBox fileName={fileName} setFileName={setFileName}/>
+        <Response response={response} setResponse={setResponse}/>
+      </div>
+      <Footer/>
     </div>
   );
 }
