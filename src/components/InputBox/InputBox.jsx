@@ -27,7 +27,7 @@ function InputBox({ fileName, setFileName}) {
 
   return (
     <div className="file-input-container" onDrop={handleDrop} onDragOver={handleDragOver}>
-      <input type="file" id="file" className="file-input" onChange={handleFileChange}/>
+      <input type="file" accept="audio/*" id="file" className="file-input" onChange={handleFileChange}/>
       <label htmlFor="file" className="file-label">
         {fileName ? (<span>{fileName.name}</span>):(<span><FileBoxText/></span>)}
       </label>
